@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'SVN-Product Sans';
+    src: url('SVN-ProductSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.center{
+    z-index: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.intro{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    z-index: 16;
+}
+
+.question{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    z-index: 14;
+}
+
+.startButton{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    z-index: 5;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+button:focus {
+    border: none;
+    outline: none;
+}
+
+html{
+    overflow: hidden;
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#playIntro{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#pause{
+    position:absolute;
+    right: 6%;
+    bottom: 0;
+    z-index: 15;
+}
+
+#playTime1{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+}
+
+#playTime2{
+    position:absolute;
+    right: 3%;
+    bottom: 0%;
+    z-index: 15;
+}
+
+#nextQuestion{
+    position:absolute;
+    right: 0;
+    bottom: 3%;
+    z-index: 15;
+}
+
+#showAnswer{
+    position:absolute;
+    right: 0;
+    bottom: 6%;
+    z-index: 15;
+}
+
+#Right{
+    position:absolute;
+    right: 0;
+    bottom: 9%;
+    z-index: 15;
+}
+
+#Wrong{
+    position:absolute;
+    right: 3%;
+    bottom: 9%;
+    z-index: 15;
+}
+
+#backSubject{
+    position:absolute;
+    right: 0;
+    bottom: 12%;
+    z-index: 15;
+}
+
+#showQuestion{
+    position: absolute;
+    width: 79%;
+    height: 27%;
+    top: 79.75%;
+    left: 51%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    z-index: 16;
+}
+#questionRange{
+    color: white;
+    font-size: 30px;
+    font-family: 'SVN-Product Sans';
+    src: url('SVN-ProductSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -6,8 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIẾP SỨC</title>
     <link rel="icon" type="image/x-icon" href="icon.png"></link>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="playIntro" onclick="playIntro()">CHẠY INTRO</button>
+
+    <button id="Start" class="startButton"><img src="Start.png" width="353.75" height="81.75" onclick="Start()"></button>
     
+    <video id="intro" class="intro" width="100%">
+        <source src="2.Relay_VideoIntro.mp4" type="video/mp4">
+    </video>
+
+    <video id="ques1" class="question" width="100%">
+        <source src="2.Relay_15sVideoTiming.mp4" type="video/mp4">
+    </video>
+
+    <video id="ques2" class="question" width="100%">
+        <source src="2.Relay_20sVideoTiming.mp4" type="video/mp4">
+    </video>
+
+    <div class="center" id="Subject">
+        <button id="0" name="0" onclick="openQuestion(this)"><img src="Math.png" width="292.25" height="61.25"></img></button>
+        <button id="1" name="1" onclick="openQuestion(this)"><img src="Physics.png" width="292.25" height="61.25"></img></button>
+        <br><br>
+        <button id="2" name="2" onclick="openQuestion(this)"><img src="Chemistry.png" width="292.25" height="61.25"></img></button>
+        <button id="3" name="3" onclick="openQuestion(this)"><img src="Literature.png" width="292.25" height="61.25"></img></button>
+        <br><br>
+        <button id="4" name="4" onclick="openQuestion(this)"><img src="English.png" width="292.25" height="61.25"></img></button>
+        <button id="5" name="5" onclick="openQuestion(this)"><img src="Biology.png" width="292.25" height="61.25"></img></button>
+        <br><br>
+        <button id="6" name="6" onclick="openQuestion(this)"><img src="History.png" width="292.25" height="61.25"></img></button>
+        <button id="7" name="7" onclick="openQuestion(this)"><img src="Geography.png" width="292.25" height="61.25"></img></button>
+        <br><br>
+        <button id="8" name="8" onclick="openQuestion(this)"><img src="Logic.png" width="292.25" height="61.25"></img></button>
+        <button id="9" name="9" onclick="openQuestion(this)"><img src="Common.png" width="292.25" height="61.25"></img></button>
+    </div>
+
+    <div class="menu" id="menu">
+        <button id="playTime1" onclick="playTime1()">15 GIÂY</button>
+        <button id="playTime2" onclick="playTime2()">20 GIÂY</button>
+        <button id="pause" onclick="pause()">DỪNG</button>s
+        <button id="nextQuestion" onclick="nextQuestion()">CHUYỂN CÂU</button>
+        <button id="showAnswer" onclick="showAnswer()">ĐÁP ÁN TS</button>
+        <button id="Right" onclick="RightAns()">ĐÚNG</button>
+        <button id="Wrong" onclick="WrongAns()">SAI</button>
+        <button id="backSubject" onclick="backSubject()">LĨNH VỰC</button>
+    </div>
+
+    <div id="showQuestion">
+        <p id="questionRange"></p>
+    </div>
+    <script src="code.js"></script>
 </body>
 </html>
